@@ -1,11 +1,17 @@
 # Test assignment: Backend
 Use whatever language/framework you prefer (we mostly use Python and Kotlin).
+
+"Patrik Duch":  "As a web framework, I have chosen Django, which uses the Python programming language."
+
+
 ## 1. Setup an environment
 To complete the assignment you will need a running PostgreSQL and Redis instances. So, as a first step, please, create a `docker-compose.yml` file that will spin up those databases for you. Make sure that you will be able to connect to them from your future server.
 Within PostgreSQL, create a new database (you can name it as you wish) and a new table `users`. Each row of the table, unsurprisingly, would represent a user of some website and should contain the following information:
 * *Name*
 * *Registered at*  - timestamp when user was registered
 As long as table is able to represent the two fields mentioned above, the table can be defined any way you prefer.
+
+
 ## 2. Implement a simple server to serve a SQL query
 As the core of the task, we would like you to write a SQL query that would operate on PostgreSQL database table you have created in the previous step.
 ```
