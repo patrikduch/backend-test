@@ -11,6 +11,12 @@ Within PostgreSQL, create a new database (you can name it as you wish) and a new
 * *Registered at*  - timestamp when user was registered
 As long as table is able to represent the two fields mentioned above, the table can be defined any way you prefer.
 
+"Patrik Duch": "For preparation of required services use the following command"
+
+```bash
+docker-compose up -d
+```
+
 
 ## 2. Implement a simple server to serve a SQL query
 As the core of the task, we would like you to write a SQL query that would operate on PostgreSQL database table you have created in the previous step.
