@@ -17,6 +17,16 @@ As long as table is able to represent the two fields mentioned above, the table 
 docker-compose up -d
 ```
 
+### Postgres
+
+**PostgreSQL** is our primary database for storing relational data.
+
+- **Port:** `5432`
+
+Ensure that PostgreSQL is running on the specified port. This is the default port for PostgreSQL, but it can be customized if necessary in the PostgreSQL configuration file.
+
+
+
 
 ## 2. Implement a simple server to serve a SQL query
 As the core of the task, we would like you to write a SQL query that would operate on PostgreSQL database table you have created in the previous step.
