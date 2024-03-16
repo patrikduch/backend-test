@@ -29,7 +29,7 @@ python manage.py migrate
 
 Startup of Webserver
 ```bash
-python manage.py migrate
+python manage.py runserver
 ```
 
 
