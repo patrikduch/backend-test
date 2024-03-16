@@ -25,6 +25,13 @@ docker-compose up -d
 
 Ensure that PostgreSQL is running on the specified port. This is the default port for PostgreSQL, but it can be customized if necessary in the PostgreSQL configuration file.
 
+## Redis
+
+**Redis** is used for caching and message queuing to enhance performance.
+
+- **Port:** `6379`
+
+Redis should be running on the specified port. This is the default port for Redis. Similar to PostgreSQL, the port can be changed if needed by editing the Redis configuration settings.
 
 
 
