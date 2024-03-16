@@ -37,6 +37,6 @@ class Migration(migrations.Migration):
             $$
             LANGUAGE plpgsql;
             """,
-            reverse_sql="DROP FUNCTION IF EXISTS your_custom_function();"
+            reverse_sql="DROP FUNCTION IF EXISTS get_user_registrations_by_month();"
         )
     ]
