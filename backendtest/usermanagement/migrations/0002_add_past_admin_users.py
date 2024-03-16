@@ -4,12 +4,16 @@ from django.db import migrations
 from django.utils import timezone
 from django.contrib.auth.models import User
 
-def add_past_admin_users(apps, schema_editor):
-    # List of users to add
-    users_to_create = [
+def get_users_data():
+    return [
         {'username': 'admin1', 'password': 'password123', 'email': 'admin1@example.com', 'date_joined': timezone.datetime(2023, 7, 1)},
         {'username': 'admin2', 'password': 'password123', 'email': 'admin2@example.com', 'date_joined': timezone.datetime(2023, 6, 2)},
     ]
+
+
+def add_past_admin_users(apps, schema_editor):
+    # List of users to add
+    users_to_create = get_users_data()
 
     for user_data in users_to_create:
         user = User.objects.create_superuser(
@@ -22,8 +26,7 @@ def add_past_admin_users(apps, schema_editor):
 
 def remove_past_admin_users(apps, schema_editor):
     # Remove the users created above
-    User.objects.filter(username__in=[user['username'] for user in users_to_create]).delete()
-
+    User.objects.filter(username__in=[user['username'] for user in get_users_data()]).delete()
 
 
 class Migration(migrations.Migration):
