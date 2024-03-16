@@ -1,7 +1,7 @@
 # Test assignment: Backend
 Use whatever language/framework you prefer (we mostly use Python and Kotlin).
 
-<p style="color: red;">"Patrik Duch": "As a web framework, I have chosen Django, which uses the Python programming language."</p>
+**Important**: "Patrik Duch": "As a web framework, I have chosen Django, which uses the Python programming language."
 
 
 ## 1. Setup an environment
