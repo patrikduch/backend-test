@@ -17,6 +17,11 @@ As long as table is able to represent the two fields mentioned above, the table 
 docker-compose up -d
 ```
 
+Prepare virtualenv
+```bash
+python -m venv myvenv  
+```
+
 Install the dependencies
 ```bash
 pip install -r requirements.txt
