@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import UsersInfoView
-
+from .views import users_info_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/users/info', UsersInfoView.as_view(), name='user-info'),
+    path('api/users/monthly-signups', users_info_view.as_view(), name='user-info'),
 ]
