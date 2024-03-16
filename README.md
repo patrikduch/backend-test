@@ -17,6 +17,11 @@ As long as table is able to represent the two fields mentioned above, the table 
 docker-compose up -d
 ```
 
+Install the dependencies
+```bash
+pip install -r requirements.txt
+```
+
 Command for Db preparation
 ```bash
 python manage.py migrate
