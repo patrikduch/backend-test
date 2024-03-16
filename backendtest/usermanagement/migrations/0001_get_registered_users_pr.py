@@ -12,13 +12,13 @@ class Migration(migrations.Migration):
         migrations.RunSQL(
             """
             CREATE OR REPLACE FUNCTION get_user_registrations_by_month()
-                RETURNS TABLE(month varchar, registrations integer) AS
+            RETURNS TABLE(month varchar, registrations integer) AS
             $$
-            BEGIN
-                RETURN QUERY WITH months AS (
+                BEGIN
+                    RETURN QUERY WITH months AS (
                     SELECT generate_series(
                     date_trunc('month', CURRENT_DATE) - INTERVAL '1 year',
-                    date_trunc('month', CURRENT_DATE),
+                    date_trunc('month', CURRENT_DATE) - INTERVAL '1 month',
                     '1 month'
                     ) AS month_start
                 )
