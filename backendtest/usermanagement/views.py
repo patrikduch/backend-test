@@ -10,7 +10,7 @@ def get_cache_key():
     return 'user_registrations_by_month'
 
 # Views
-class users_info_view(APIView):
+class UserRegistrationByMonthView(APIView):
 
     @staticmethod
     def get_cache_key():
