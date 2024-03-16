@@ -17,6 +17,17 @@ As long as table is able to represent the two fields mentioned above, the table 
 docker-compose up -d
 ```
 
+Command for Db preparation
+```bash
+python manage.py migrate
+```
+
+Startup of Webserver
+```bash
+python manage.py migrate
+```
+
+
 ### Postgres
 
 **PostgreSQL** is our primary database for storing relational data.
@@ -49,6 +60,8 @@ The output of the SQL query doest not change that often, so it would make sense 
 * Implement caching via Redis for results of your newly created query.
 * Make sure that cache is invalidated on time and endpoint does not return stale results.
 * Try adding caching in a way that would minimize the amount of change in the existing code.
+
+**Important** "Patrik Duch": "Invalidation is in place by expiration period."
 
 
 ## What we expect from you
